@@ -42,7 +42,14 @@ print(f"Pn(m) = {combination(n, m) * 0.5 ** m * 0.5 ** (n - m):.3f}")
 # Какова вероятность того, что ровно два мяча белые? Какова вероятность того,
 # что хотя бы один мяч белый?
 
-
+print(f"3. что все мячи белые:\
+{combination(7, 2) / combination(10, 2) * combination(9, 2) / combination(11, 2):.3f}")
+# Можно также по формуле вероятности произведения событий
+print(f"3. что все мячи белые: {7/10 * 6/9 * 9/11 * 8/10 :.3f}")
+# P32 = combination(7, 2) / combination(10, 2) * combination(2, 2) / combination(11, 2) +\
+#     combination(3, 2) / combination(10, 2) * combination(9, 2) / combination(11, 2) +\
+#         combination(7, 1) / combination(10, 2) * combination(9, 1) / combination(11, 2)
+# print(f"3. что ровно два мяча белые: {P32:.3f}")
 
 
 
